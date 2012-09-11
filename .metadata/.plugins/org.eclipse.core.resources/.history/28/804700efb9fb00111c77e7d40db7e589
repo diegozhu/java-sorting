@@ -1,0 +1,9 @@
+package com.toozhao.sort;
+
+public class InsertionSort {
+	
+	public static void main(String args[]){
+		
+		
+	}
+}
