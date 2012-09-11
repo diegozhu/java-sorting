@@ -1,0 +1,14 @@
+package com.toozhao.sort;
+
+public class ShellSort {
+	
+	// 定义需要排序的数组
+	private static int[] array = { 1, 20, 6, 3, 19, 7, 14, 12, 10 };
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,38 @@
+package com.toozhao.sort;
+
+import java.util.Random;
+
+public class Another {
+
+	public static void shellSort(Comparable[] data){  
+        int j;  
+        for(int gap = data.length / 2; gap > 0; gap /= 2){  
+            for(int i = gap; i < data.length; i++){  
+                Comparable temp = data[i];  
+                for(j = i; j >= gap && temp.compareTo(data[j - gap]) < 0; j -= gap){  
+                    data[j] = data[j - gap];  
+                }  
+                  
+                data[j] = temp;  
+            }  
+        }  
+    }  
+      
+    public static void main(String[] args){  
+        Random r = new Random();  
+        Comparable[] data = new Comparable[20];  
+        for(int i = 0; i < data.length; i++){  
+            data[i] = r.nextInt(data.length);  
+        }  
+          
+        for(int i = 0; i < data.length; i++)  
+            System.out.print(data[i] + " ");  
+          
+        shellSort(data);  
+        System.out.println();  
+          
+        for(int i = 0; i < data.length; i++)  
+            System.out.print(data[i] + " ");  
+    }  
+
+}
