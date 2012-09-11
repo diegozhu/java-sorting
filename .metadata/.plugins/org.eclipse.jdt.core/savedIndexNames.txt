@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+/home/junv/myworkspace/.metadata/.plugins/org.eclipse.jdt.core
-1059406521.index
-112058838.index
